@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-5xl font-bold  text-center mt-5">Let's get some <span
+            class="text-orange-400 text-semibold font-bold">money</span>!</h1>
+    <section class="mt-10">
+        <div class="grid grid-cols-3 gap-8 w-3/4 mx-auto">
+            <div class="bg-green-400 py-4 text-center rounded-xl">
+                <h2 class="text-3xl text-white">Deposit</h2>
+                <h1 class="text-5xl text-white">$<span id="deposit-text">00</span></h1>
+            </div>
+            <div class="bg-yellow-400 py-5 text-center rounded-xl">
+                <h2 class="text-3xl text-white">WithDraw</h2>
+                <h1 class="text-5xl text-white">$<span id="withdraw-text">00</span></h1>
+            </div>
+            <div class="bg-red-400 py-5 text-center rounded-xl">
+                <h2 class="text-3xl text-white">Balance</h2>
+                <h1 class="text-5xl text-white">$<span id="balance-total">1200</span></h1>
+            </div>
+        </div>
+    </section>
+    <!-- Deposite and withdraw section -->
+    <section class="mt-10">
+        <div class="grid grid-cols-2 gap-8 w-3/4 mx-auto">
+            <div class="bg-emerald-700 py-4 px-5 rounded-xl">
+                <h2 class="text-2xl text-white mb-4">Please Deposit</h2>
+                <input class="email block px-2 w-3/4 h-8 mb-2 rounded-lg block" placeholder="$ Amount You want to Deposit" type="text"
+                    name="" id="input-deposit">
+                <input type="submit" id="btn-deposit"
+                    class="bg-orange-400 px-6 py-2 text-white font-medium rounded-lg mt-3 hover:bg-orange-300"
+                    value="Deposit">
+            </div>
+            <div class="bg-amber-700 py-4 px-5 rounded-xl">
+                <h2 class="text-2xl text-white mb-4">Please Withdraw</h2>
+                <input class="email block px-2 w-3/4 h-8 mb-2 rounded-lg block" placeholder="$ Amount You want to withdraw" type="text"
+                    name="" id="input-withdraw">
+                <input type="submit" id="btn-withdraw"
+                    class="bg-orange-400 px-6 py-2 text-white font-medium rounded-lg mt-3 hover:bg-orange-300"
+                    value="withdraw">
+            </div>
+        </div>
+    </section>
+    <script src="js/utilities.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
